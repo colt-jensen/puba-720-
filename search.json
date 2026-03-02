@@ -157,6 +157,71 @@
     ]
   },
   {
+    "objectID": "content/canvas-instructions.html",
+    "href": "content/canvas-instructions.html",
+    "title": "Canvas Replication Instructions",
+    "section": "",
+    "text": "Skip to main content"
+  },
+  {
+    "objectID": "content/canvas-instructions.html#how-to-attempt-to-replicate-the-quarto-demo-in-canvas",
+    "href": "content/canvas-instructions.html#how-to-attempt-to-replicate-the-quarto-demo-in-canvas",
+    "title": "Canvas Replication Instructions",
+    "section": "How to (attempt to) replicate the Quarto demo in Canvas",
+    "text": "How to (attempt to) replicate the Quarto demo in Canvas\nFollow these steps in your Canvas sandbox, then compare the result to the live course website. The gaps you encounter are the argument.\n\n\nBefore you start\nRun demo-canvas-comparison.R in RStudio. It will produce two files in your working directory:\n\ncounty_figure.png — the scatterplot\ncounty_table.html — the formatted summary table\n\n\n\n\nStep 1 — Create a Canvas Page\n\nIn your Canvas sandbox course, go to Pages → + Page\nTitle it: Descriptive Statistics: NC County Data\nYou now have the Rich Content Editor (RCE)\n\n\n\n\nStep 2 — Try to add the R code\nWhat you want: Show students the cleaning code with line-by-line annotations.\nWhat Canvas gives you: - Paste the code into the RCE — it renders as plain paragraph text with no syntax highlighting - Switch to HTML view and wrap it in &lt;pre&gt;&lt;code&gt; tags — you get monospaced text, still no highlighting, no hover annotations - There is no way to link a specific line of code to an explanatory tooltip\nThe gap: Students see raw text. They cannot tell which tokens are functions, which are arguments, and which are strings. There is no mechanism to annotate individual lines.\n\n\n\nStep 3 — Try to add the summary table\nWhat you want: A formatted table with a spanning header, currency-formatted numbers, and a footnote linked to a specific column.\nOption A — Use the Canvas table tool: 1. In the RCE, click Insert → Table 2. Build the table manually, cell by cell 3. Notice: no column spanner rows, no footnote linking, no number formatting (you type “$56,300” by hand for every cell), no alternating row shading\nOption B — Embed county_table.html: 1. Canvas does not allow embedding arbitrary HTML files in Pages 2. You can upload county_table.html to Files, but students download it as a file — it does not render inline on the page 3. You can take a screenshot of the table and upload it as an image — but screenshots have no semantic structure, fail screen readers, and cannot be resized without blurring\nThe gap: The Canvas table is a manual data-entry grid. It requires retyping every value, cannot format numbers programmatically, and has no support for grouped headers or linked footnotes. If the data change, every cell must be updated by hand.\n\n\n\nStep 4 — Try to add the figure\nWhat you want: An embedded, captioned, accessible figure with alt text.\nWhat Canvas gives you: 1. In the RCE, click Insert → Images → Upload Image 2. Select county_figure.png and upload it 3. Canvas will prompt for alt text — type a description (most instructors skip this step, leaving the image inaccessible) 4. The figure appears on the page\nWhat is missing: - The figure is a static image. If the data change, you must re-run the script, re-export, and re-upload manually - The caption is plain text typed below the image — it has no semantic connection to the figure (no &lt;figcaption&gt; element) - The alt text field is optional and unvalidated — there is no enforcement or reminder to complete it - There is no OLS trend line annotation or interactive tooltip\nThe gap: The figure works visually but is a dead end for pedagogy. Students cannot see the code that produced it, cannot reproduce it, and the page does not update if anything changes.\n\n\n\nStep 5 — Compare\nOpen both side by side:\n\n\n\nFeature\nCanvas Page\nQuarto Site\n\n\n\n\nSyntax-highlighted code\n✗\n✓\n\n\nCode + output on same page\n✗\n✓\n\n\nLine-level code annotations\n✗\n✓\n\n\nFormatted table (currency, %)\nManual entry\nAutomatic\n\n\nSpanning column headers\n✗\n✓\n\n\nFootnote linked to column\n✗\n✓\n\n\nSemantic figure caption\n✗\n✓\n\n\nEnforced alt text\n✗\n✓ (chunk option)\n\n\nUpdates when data change\nManual re-upload\nRe-render once\n\n\nStudents can copy the code\n✗\n✓\n\n\n\n\n\n\nThe core argument\nCanvas is a learning management system — it is designed for assignment submission, gradebooks, and announcements. It is not designed to serve as a pedagogical document for a methods course.\nA Quarto site treats the course page itself as a reproducible document. The code, the output, and the explanation are co-located, version-controlled, and accessible by default. For a quantitative methods course where students are learning to read and write code, that difference is not cosmetic — it is the entire point."
+  },
+  {
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Course Content",
+    "section": "",
+    "text": "Skip to main content\nEach session’s page contains readings, lecture slides or notes, and any videos for that week. Materials are organized by module below.",
+    "crumbs": [
+      "Home",
+      "Course Content"
+    ]
+  },
+  {
+    "objectID": "content/index.html#module-1-foundations",
+    "href": "content/index.html#module-1-foundations",
+    "title": "Course Content",
+    "section": "Module 1: Foundations",
+    "text": "Module 1: Foundations\n\n\n\nSession\nTopic\nMaterials\n\n\n\n\nWeek 1\nIntroduction to [Topic]\nContent →\n\n\nWeek 2\n[Topic 2]\nComing soon",
+    "crumbs": [
+      "Home",
+      "Course Content"
+    ]
+  },
+  {
+    "objectID": "content/index.html#module-2-core-methods",
+    "href": "content/index.html#module-2-core-methods",
+    "title": "Course Content",
+    "section": "Module 2: Core Methods",
+    "text": "Module 2: Core Methods\n\n\n\nSession\nTopic\nMaterials\n\n\n\n\nWeek 3\n[Topic 3]\nComing soon\n\n\nWeek 4\n[Topic 4]\nComing soon",
+    "crumbs": [
+      "Home",
+      "Course Content"
+    ]
+  },
+  {
+    "objectID": "content/index.html#module-3-applications",
+    "href": "content/index.html#module-3-applications",
+    "title": "Course Content",
+    "section": "Module 3: Applications",
+    "text": "Module 3: Applications\n\n\n\nSession\nTopic\nMaterials\n\n\n\n\nWeek 5\n[Topic 5]\nComing soon\n\n\nWeek 6\n[Topic 6]\nComing soon",
+    "crumbs": [
+      "Home",
+      "Course Content"
+    ]
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News and Announcements",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\nCourse announcements will appear here throughout the semester. Check back regularly or subscribe to updates.\n\n\n\n\n\nWelcome to the Course!\n\n\nCourse website is live — here’s what to do before the first session.\n\n\n\n\n\nJanuary 13, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "content/demo-quarto-vs-canvas.html",
     "href": "content/demo-quarto-vs-canvas.html",
     "title": "Descriptive Statistics: From Raw Data to Publication-Ready Output",
@@ -209,7 +274,7 @@
     "href": "content/demo-quarto-vs-canvas.html#step-3-descriptive-statistics-table",
     "title": "Descriptive Statistics: From Raw Data to Publication-Ready Output",
     "section": "Step 3 — Descriptive Statistics Table",
-    "text": "Step 3 — Descriptive Statistics Table\n\n\n\n\n\n\nTipWhat Canvas cannot replicate here\n\n\n\nThe table below has currency-formatted numbers, a spanning column header, a footnote linked to a specific column, and alternating row shading — all generated in a few lines of code. Producing an equivalent in Canvas requires manually entering every value into a basic HTML table editor with no support for number formatting, column groups, or footnotes.\n\n\n\ncounties |&gt;\n  group_by(region) |&gt;\n  summarise(\n    n          = n(),\n    pop_avg    = mean(population),\n    income_avg = mean(med_income),\n    unemp_avg  = mean(unemp_rate),\n    expend_avg = mean(expend_pc),\n    .groups    = \"drop\"\n  ) |&gt;\n  arrange(region) |&gt;\n  gt() |&gt;\n  tab_header(\n    title    = md(\"**County Characteristics by Region**\"),\n    subtitle = \"Selected North Carolina Counties (Simulated Data)\"\n  ) |&gt;\n  tab_spanner(\n    label   = \"Economic Characteristics\",\n    columns = c(income_avg, unemp_avg, expend_avg)\n  ) |&gt;\n  cols_label(\n    region     = \"Region\",\n    n          = \"N\",\n    pop_avg    = \"Avg. Population\",\n    income_avg = \"Median HH Income\",\n    unemp_avg  = \"Unemployment (%)\",\n    expend_avg = \"Expenditure per Capita\"\n  ) |&gt;\n  fmt_integer(columns = pop_avg) |&gt;\n  fmt_currency(columns = c(income_avg, expend_avg), decimals = 0) |&gt;\n  fmt_number(columns = unemp_avg, decimals = 1) |&gt;\n  tab_footnote(\n    footnote  = \"Income imputed for one county with missing data (median substitution).\",\n    locations = cells_column_labels(columns = income_avg)\n  ) |&gt;\n  tab_style(\n    style     = cell_fill(color = \"#f8fafc\"),\n    locations = cells_body(rows = c(1, 3))\n  ) |&gt;\n  tab_style(\n    style     = cell_text(weight = \"bold\"),\n    locations = cells_column_spanners()\n  ) |&gt;\n  tab_options(\n    table.width               = pct(100),\n    heading.align             = \"left\",\n    column_labels.font.weight = \"bold\"\n  )\n\n\n\nTable 1: County characteristics by region, selected NC counties.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCounty Characteristics by Region\n\n\nSelected North Carolina Counties (Simulated Data)\n\n\nRegion\nN\nAvg. Population\n\nEconomic Characteristics\n\n\n\nMedian HH Income1\nUnemployment (%)\nExpenditure per Capita\n\n\n\n\nCoastal\n4\n238,750\n$52,875\n5.1\n$2,957\n\n\nMountains\n1\n275,203\n$55,950\n3.9\n$2,987\n\n\nPiedmont\n10\n452,030\n$63,830\n4.0\n$3,383\n\n\n\n1 Income imputed for one county with missing data (median substitution).",
+    "text": "Step 3 — Descriptive Statistics Table\n\n\n\n\n\n\nTipWhere a standard LMS may fall short\n\n\n\nThe table below has currency-formatted numbers, a spanning column header, a footnote linked to a specific column, and alternating row shading — all generated in a few lines of code. Producing a comparable table in Canvas typically requires manually entering every value into a basic HTML table editor, with limited support for number formatting, column groups, or linked footnotes.\n\n\n\ncounties |&gt;\n  group_by(region) |&gt;\n  summarise(\n    n          = n(),\n    pop_avg    = mean(population),\n    income_avg = mean(med_income),\n    unemp_avg  = mean(unemp_rate),\n    expend_avg = mean(expend_pc),\n    .groups    = \"drop\"\n  ) |&gt;\n  arrange(region) |&gt;\n  gt() |&gt;\n  tab_header(\n    title    = md(\"**County Characteristics by Region**\"),\n    subtitle = \"Selected North Carolina Counties (Simulated Data)\"\n  ) |&gt;\n  tab_spanner(\n    label   = \"Economic Characteristics\",\n    columns = c(income_avg, unemp_avg, expend_avg)\n  ) |&gt;\n  cols_label(\n    region     = \"Region\",\n    n          = \"N\",\n    pop_avg    = \"Avg. Population\",\n    income_avg = \"Median HH Income\",\n    unemp_avg  = \"Unemployment (%)\",\n    expend_avg = \"Expenditure per Capita\"\n  ) |&gt;\n  fmt_integer(columns = pop_avg) |&gt;\n  fmt_currency(columns = c(income_avg, expend_avg), decimals = 0) |&gt;\n  fmt_number(columns = unemp_avg, decimals = 1) |&gt;\n  tab_footnote(\n    footnote  = \"Income imputed for one county with missing data (median substitution).\",\n    locations = cells_column_labels(columns = income_avg)\n  ) |&gt;\n  tab_style(\n    style     = cell_fill(color = \"#f8fafc\"),\n    locations = cells_body(rows = c(1, 3))\n  ) |&gt;\n  tab_style(\n    style     = cell_text(weight = \"bold\"),\n    locations = cells_column_spanners()\n  ) |&gt;\n  tab_options(\n    table.width               = pct(100),\n    heading.align             = \"left\",\n    column_labels.font.weight = \"bold\"\n  )\n\n\n\nTable 1: County characteristics by region, selected NC counties.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCounty Characteristics by Region\n\n\nSelected North Carolina Counties (Simulated Data)\n\n\nRegion\nN\nAvg. Population\n\nEconomic Characteristics\n\n\n\nMedian HH Income1\nUnemployment (%)\nExpenditure per Capita\n\n\n\n\nCoastal\n4\n238,750\n$52,875\n5.1\n$2,957\n\n\nMountains\n1\n275,203\n$55,950\n3.9\n$2,987\n\n\nPiedmont\n10\n452,030\n$63,830\n4.0\n$3,383\n\n\n\n1 Income imputed for one county with missing data (median substitution).",
     "crumbs": [
       "Home",
       "Demonstrations",
@@ -233,62 +298,11 @@
     "href": "content/demo-quarto-vs-canvas.html#what-this-demonstrates",
     "title": "Descriptive Statistics: From Raw Data to Publication-Ready Output",
     "section": "What This Demonstrates",
-    "text": "What This Demonstrates\n\n\n\n\n\n\nImportantFive things Canvas cannot do\n\n\n\n\nRendered code alongside its output. In Canvas, instructors must paste screenshots of code and output as separate images. Students cannot copy, adapt, or verify the code.\nFormatted statistical tables. The gt table above has currency formatting, a spanning column header, a footnote linked to a specific column, and conditional row shading. Canvas’s HTML table editor supports none of this.\nCode annotations. The hover annotations in Step 2 link explanatory text directly to specific lines of code — a feature impossible in any static platform.\nAccessible figure captions and alt text. The fig-cap and fig-alt chunk options produce a proper HTML &lt;figcaption&gt; and alt attribute required for WCAG compliance. Images uploaded to Canvas have no enforced alt text and no semantic caption structure.\nReproducibility. If the underlying data changes, every table and figure on this page updates automatically on the next render. A Canvas page requires manually replacing every screenshot.",
+    "text": "What This Demonstrates\n\n\n\n\n\n\nImportantFive areas where a dedicated course site has an advantage\n\n\n\n\nRendered code alongside its output. In a standard LMS, instructors typically paste screenshots of code and output as separate images. Students cannot easily copy, adapt, or verify the code from a screenshot.\nFormatted statistical tables. The gt table above has currency formatting, a spanning column header, a footnote linked to a specific column, and conditional row shading — generated programmatically. Replicating this level of formatting in a basic HTML table editor is time-consuming and fragile.\nCode annotations. The hover annotations in Step 2 link explanatory text directly to specific lines of code — a feature well-suited to methods instruction that is difficult to achieve in a page-based editor.\nAccessible figure captions and alt text. The fig-cap and fig-alt chunk options produce a proper HTML &lt;figcaption&gt; and alt attribute as part of the authoring workflow, supporting WCAG compliance by default rather than as an afterthought.\nReproducibility. If the underlying data change, every table and figure on this page updates automatically on the next render. In a static page, each output would need to be manually regenerated and re-uploaded.",
     "crumbs": [
       "Home",
       "Demonstrations",
       "Descriptive Statistics: From Raw Data to Publication-Ready Output"
-    ]
-  },
-  {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "News and Announcements",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\nCourse announcements will appear here throughout the semester. Check back regularly or subscribe to updates.\n\n\n\n\n\nWelcome to the Course!\n\n\nCourse website is live — here’s what to do before the first session.\n\n\n\n\n\nJanuary 13, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "content/index.html",
-    "href": "content/index.html",
-    "title": "Course Content",
-    "section": "",
-    "text": "Skip to main content\nEach session’s page contains readings, lecture slides or notes, and any videos for that week. Materials are organized by module below.",
-    "crumbs": [
-      "Home",
-      "Course Content"
-    ]
-  },
-  {
-    "objectID": "content/index.html#module-1-foundations",
-    "href": "content/index.html#module-1-foundations",
-    "title": "Course Content",
-    "section": "Module 1: Foundations",
-    "text": "Module 1: Foundations\n\n\n\nSession\nTopic\nMaterials\n\n\n\n\nWeek 1\nIntroduction to [Topic]\nContent →\n\n\nWeek 2\n[Topic 2]\nComing soon",
-    "crumbs": [
-      "Home",
-      "Course Content"
-    ]
-  },
-  {
-    "objectID": "content/index.html#module-2-core-methods",
-    "href": "content/index.html#module-2-core-methods",
-    "title": "Course Content",
-    "section": "Module 2: Core Methods",
-    "text": "Module 2: Core Methods\n\n\n\nSession\nTopic\nMaterials\n\n\n\n\nWeek 3\n[Topic 3]\nComing soon\n\n\nWeek 4\n[Topic 4]\nComing soon",
-    "crumbs": [
-      "Home",
-      "Course Content"
-    ]
-  },
-  {
-    "objectID": "content/index.html#module-3-applications",
-    "href": "content/index.html#module-3-applications",
-    "title": "Course Content",
-    "section": "Module 3: Applications",
-    "text": "Module 3: Applications\n\n\n\nSession\nTopic\nMaterials\n\n\n\n\nWeek 5\n[Topic 5]\nComing soon\n\n\nWeek 6\n[Topic 6]\nComing soon",
-    "crumbs": [
-      "Home",
-      "Course Content"
     ]
   },
   {

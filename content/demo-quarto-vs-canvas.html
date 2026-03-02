@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A demonstration of live reproducible analysis in R — rendered code, formatted tables, and embedded figures that cannot be replicated accessibly within Canvas.">
+<meta name="description" content="A demonstration of live reproducible analysis in R — rendered code, formatted tables, and embedded figures that are difficult to replicate accessibly within a standard LMS.">
 
 <title>Descriptive Statistics: From Raw Data to Publication-Ready Output – PUBA 720: Applied Research for Public Administrators II</title>
 <style>
@@ -255,7 +255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div>
   <div class="description">
-    A demonstration of live reproducible analysis in R — rendered code, formatted tables, and embedded figures that cannot be replicated accessibly within Canvas.
+    A demonstration of live reproducible analysis in R — rendered code, formatted tables, and embedded figures that are difficult to replicate accessibly within a standard LMS.
   </div>
 </div>
 
@@ -283,7 +283,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="callout-body-container callout-body">
 <p>Every table and figure here is produced by the R code shown — not a screenshot, not a pasted image. Students can read the code, copy it, modify it, and run it themselves.</p>
-<p><strong>Canvas cannot replicate this.</strong> Canvas Pages support uploaded image files and a basic HTML table editor, but have no ability to render live code alongside its output, produce accessible formatted statistical tables, or embed reproducible figures that update automatically when the underlying data changes.</p>
+<p><strong>This is difficult to replicate well in a standard LMS.</strong> Canvas Pages support uploaded image files and a basic HTML table editor, but are not designed to render live code alongside its output, produce richly formatted statistical tables, or embed reproducible figures that update automatically when the underlying data changes.</p>
 </div>
 </div>
 <section id="the-scenario" class="level2">
@@ -388,11 +388,11 @@ $ expend_pc  &lt;dbl&gt; 3842, 4120, 3256, 3189, 4567, 2987, 3421, 2876, 2654, 2
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>What Canvas cannot replicate here
+<span class="screen-reader-only">Tip</span>Where a standard LMS may fall short
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The table below has currency-formatted numbers, a spanning column header, a footnote linked to a specific column, and alternating row shading — all generated in a few lines of code. Producing an equivalent in Canvas requires manually entering every value into a basic HTML table editor with no support for number formatting, column groups, or footnotes.</p>
+<p>The table below has currency-formatted numbers, a spanning column header, a footnote linked to a specific column, and alternating row shading — all generated in a few lines of code. Producing a comparable table in Canvas typically requires manually entering every value into a basic HTML table editor, with limited support for number formatting, column groups, or linked footnotes.</p>
 </div>
 </div>
 <div class="cell">
@@ -451,23 +451,23 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
 </figcaption>
 <div aria-describedby="tbl-summary-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="qvkwwwzzca" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qvkwwwzzca table {
+<div id="wdrabbnlzt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#wdrabbnlzt table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#qvkwwwzzca thead, #qvkwwwzzca tbody, #qvkwwwzzca tfoot, #qvkwwwzzca tr, #qvkwwwzzca td, #qvkwwwzzca th {
+#wdrabbnlzt thead, #wdrabbnlzt tbody, #wdrabbnlzt tfoot, #wdrabbnlzt tr, #wdrabbnlzt td, #wdrabbnlzt th {
   border-style: none;
 }
 
-#qvkwwwzzca p {
+#wdrabbnlzt p {
   margin: 0;
   padding: 0;
 }
 
-#qvkwwwzzca .gt_table {
+#wdrabbnlzt .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -493,12 +493,12 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-left-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_caption {
+#wdrabbnlzt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#qvkwwwzzca .gt_title {
+#wdrabbnlzt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -510,7 +510,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-bottom-width: 0;
 }
 
-#qvkwwwzzca .gt_subtitle {
+#wdrabbnlzt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -522,7 +522,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-top-width: 0;
 }
 
-#qvkwwwzzca .gt_heading {
+#wdrabbnlzt .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -534,13 +534,13 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-right-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_bottom_border {
+#wdrabbnlzt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_col_headings {
+#wdrabbnlzt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -555,7 +555,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-right-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_col_heading {
+#wdrabbnlzt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -575,7 +575,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   overflow-x: hidden;
 }
 
-#qvkwwwzzca .gt_column_spanner_outer {
+#wdrabbnlzt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -587,15 +587,15 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   padding-right: 4px;
 }
 
-#qvkwwwzzca .gt_column_spanner_outer:first-child {
+#wdrabbnlzt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#qvkwwwzzca .gt_column_spanner_outer:last-child {
+#wdrabbnlzt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#qvkwwwzzca .gt_column_spanner {
+#wdrabbnlzt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -607,11 +607,11 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   width: 100%;
 }
 
-#qvkwwwzzca .gt_spanner_row {
+#wdrabbnlzt .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#qvkwwwzzca .gt_group_heading {
+#wdrabbnlzt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -637,7 +637,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   text-align: left;
 }
 
-#qvkwwwzzca .gt_empty_group_heading {
+#wdrabbnlzt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -652,15 +652,15 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   vertical-align: middle;
 }
 
-#qvkwwwzzca .gt_from_md > :first-child {
+#wdrabbnlzt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#qvkwwwzzca .gt_from_md > :last-child {
+#wdrabbnlzt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#qvkwwwzzca .gt_row {
+#wdrabbnlzt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -679,7 +679,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   overflow-x: hidden;
 }
 
-#qvkwwwzzca .gt_stub {
+#wdrabbnlzt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -692,7 +692,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   padding-right: 5px;
 }
 
-#qvkwwwzzca .gt_stub_row_group {
+#wdrabbnlzt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -706,15 +706,15 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   vertical-align: top;
 }
 
-#qvkwwwzzca .gt_row_group_first td {
+#wdrabbnlzt .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#qvkwwwzzca .gt_row_group_first th {
+#wdrabbnlzt .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#qvkwwwzzca .gt_summary_row {
+#wdrabbnlzt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -724,16 +724,16 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   padding-right: 5px;
 }
 
-#qvkwwwzzca .gt_first_summary_row {
+#wdrabbnlzt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_first_summary_row.thick {
+#wdrabbnlzt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#qvkwwwzzca .gt_last_summary_row {
+#wdrabbnlzt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -743,7 +743,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-bottom-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_grand_summary_row {
+#wdrabbnlzt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -753,7 +753,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   padding-right: 5px;
 }
 
-#qvkwwwzzca .gt_first_grand_summary_row {
+#wdrabbnlzt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -763,7 +763,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-top-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_last_grand_summary_row_top {
+#wdrabbnlzt .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -773,11 +773,11 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-bottom-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_striped {
+#wdrabbnlzt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#qvkwwwzzca .gt_table_body {
+#wdrabbnlzt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -786,7 +786,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-bottom-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_footnotes {
+#wdrabbnlzt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -800,7 +800,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-right-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_footnote {
+#wdrabbnlzt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -809,7 +809,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   padding-right: 5px;
 }
 
-#qvkwwwzzca .gt_sourcenotes {
+#wdrabbnlzt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -823,7 +823,7 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   border-right-color: #D3D3D3;
 }
 
-#qvkwwwzzca .gt_sourcenote {
+#wdrabbnlzt .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -831,72 +831,72 @@ Table&nbsp;1: County characteristics by region, selected NC counties.
   padding-right: 5px;
 }
 
-#qvkwwwzzca .gt_left {
+#wdrabbnlzt .gt_left {
   text-align: left;
 }
 
-#qvkwwwzzca .gt_center {
+#wdrabbnlzt .gt_center {
   text-align: center;
 }
 
-#qvkwwwzzca .gt_right {
+#wdrabbnlzt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#qvkwwwzzca .gt_font_normal {
+#wdrabbnlzt .gt_font_normal {
   font-weight: normal;
 }
 
-#qvkwwwzzca .gt_font_bold {
+#wdrabbnlzt .gt_font_bold {
   font-weight: bold;
 }
 
-#qvkwwwzzca .gt_font_italic {
+#wdrabbnlzt .gt_font_italic {
   font-style: italic;
 }
 
-#qvkwwwzzca .gt_super {
+#wdrabbnlzt .gt_super {
   font-size: 65%;
 }
 
-#qvkwwwzzca .gt_footnote_marks {
+#wdrabbnlzt .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#qvkwwwzzca .gt_asterisk {
+#wdrabbnlzt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#qvkwwwzzca .gt_indent_1 {
+#wdrabbnlzt .gt_indent_1 {
   text-indent: 5px;
 }
 
-#qvkwwwzzca .gt_indent_2 {
+#wdrabbnlzt .gt_indent_2 {
   text-indent: 10px;
 }
 
-#qvkwwwzzca .gt_indent_3 {
+#wdrabbnlzt .gt_indent_3 {
   text-indent: 15px;
 }
 
-#qvkwwwzzca .gt_indent_4 {
+#wdrabbnlzt .gt_indent_4 {
   text-indent: 20px;
 }
 
-#qvkwwwzzca .gt_indent_5 {
+#wdrabbnlzt .gt_indent_5 {
   text-indent: 25px;
 }
 
-#qvkwwwzzca .katex-display {
+#wdrabbnlzt .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#qvkwwwzzca div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#wdrabbnlzt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1036,16 +1036,16 @@ Figure&nbsp;1: A modest positive relationship exists between median household in
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Five things Canvas cannot do
+<span class="screen-reader-only">Important</span>Five areas where a dedicated course site has an advantage
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><p><strong>Rendered code alongside its output.</strong> In Canvas, instructors must paste screenshots of code and output as separate images. Students cannot copy, adapt, or verify the code.</p></li>
-<li><p><strong>Formatted statistical tables.</strong> The <code>gt</code> table above has currency formatting, a spanning column header, a footnote linked to a specific column, and conditional row shading. Canvas’s HTML table editor supports none of this.</p></li>
-<li><p><strong>Code annotations.</strong> The hover annotations in Step 2 link explanatory text directly to specific lines of code — a feature impossible in any static platform.</p></li>
-<li><p><strong>Accessible figure captions and alt text.</strong> The <code>fig-cap</code> and <code>fig-alt</code> chunk options produce a proper HTML <code>&lt;figcaption&gt;</code> and <code>alt</code> attribute required for WCAG compliance. Images uploaded to Canvas have no enforced alt text and no semantic caption structure.</p></li>
-<li><p><strong>Reproducibility.</strong> If the underlying data changes, every table and figure on this page updates automatically on the next render. A Canvas page requires manually replacing every screenshot.</p></li>
+<li><p><strong>Rendered code alongside its output.</strong> In a standard LMS, instructors typically paste screenshots of code and output as separate images. Students cannot easily copy, adapt, or verify the code from a screenshot.</p></li>
+<li><p><strong>Formatted statistical tables.</strong> The <code>gt</code> table above has currency formatting, a spanning column header, a footnote linked to a specific column, and conditional row shading — generated programmatically. Replicating this level of formatting in a basic HTML table editor is time-consuming and fragile.</p></li>
+<li><p><strong>Code annotations.</strong> The hover annotations in Step 2 link explanatory text directly to specific lines of code — a feature well-suited to methods instruction that is difficult to achieve in a page-based editor.</p></li>
+<li><p><strong>Accessible figure captions and alt text.</strong> The <code>fig-cap</code> and <code>fig-alt</code> chunk options produce a proper HTML <code>&lt;figcaption&gt;</code> and <code>alt</code> attribute as part of the authoring workflow, supporting WCAG compliance by default rather than as an afterthought.</p></li>
+<li><p><strong>Reproducibility.</strong> If the underlying data change, every table and figure on this page updates automatically on the next render. In a static page, each output would need to be manually regenerated and re-uploaded.</p></li>
 </ol>
 </div>
 </div>
