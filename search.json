@@ -157,6 +157,97 @@
     ]
   },
   {
+    "objectID": "content/demo-quarto-vs-canvas.html",
+    "href": "content/demo-quarto-vs-canvas.html",
+    "title": "Descriptive Statistics: From Raw Data to Publication-Ready Output",
+    "section": "",
+    "text": "Skip to main content",
+    "crumbs": [
+      "Home",
+      "Demonstrations",
+      "Descriptive Statistics: From Raw Data to Publication-Ready Output"
+    ]
+  },
+  {
+    "objectID": "content/demo-quarto-vs-canvas.html#the-scenario",
+    "href": "content/demo-quarto-vs-canvas.html#the-scenario",
+    "title": "Descriptive Statistics: From Raw Data to Publication-Ready Output",
+    "section": "The Scenario",
+    "text": "The Scenario\nYou have received a dataset of county-level characteristics for 15 North Carolina counties. The data are messy: one value is missing and you need to derive a new categorical variable before producing summary statistics. Your task is to:\n\nInspect and clean the data\nProduce a formatted descriptive statistics table broken down by region\nVisualize the relationship between median household income and per capita public expenditure",
+    "crumbs": [
+      "Home",
+      "Demonstrations",
+      "Descriptive Statistics: From Raw Data to Publication-Ready Output"
+    ]
+  },
+  {
+    "objectID": "content/demo-quarto-vs-canvas.html#step-1-load-and-inspect",
+    "href": "content/demo-quarto-vs-canvas.html#step-1-load-and-inspect",
+    "title": "Descriptive Statistics: From Raw Data to Publication-Ready Output",
+    "section": "Step 1 — Load and Inspect",
+    "text": "Step 1 — Load and Inspect\n\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(scales)\n\n# Simulated NC county data (representative values, not official statistics)\ncounties_raw &lt;- tibble(\n  county     = c(\"Wake\", \"Mecklenburg\", \"Guilford\", \"Forsyth\", \"Durham\",\n                 \"Buncombe\", \"New Hanover\", \"Cumberland\", \"Gaston\", \"Onslow\",\n                 \"Cabarrus\", \"Union\", \"Catawba\", \"Pitt\", \"Alamance\"),\n  region     = c(\"Piedmont\", \"Piedmont\", \"Piedmont\", \"Piedmont\", \"Piedmont\",\n                 \"Mountains\", \"Coastal\", \"Coastal\", \"Piedmont\", \"Coastal\",\n                 \"Piedmont\", \"Piedmont\", \"Piedmont\", \"Coastal\", \"Piedmont\"),\n  population = c(1129410, 1115482, 541299, 382295, 330506,\n                 275203, 234473, 335509, 228928, 207647,\n                 218000, 245318, 159551, 177372, 169509),\n  med_income = c(78500, 72100, 56300, 54200, 65800,\n                 NA, 61400, 49300, 55200, 52100,\n                 67300, 79200, 55600, 48700, 54100),\n  unemp_rate = c(3.1, 3.4, 4.2, 4.5, 3.8,\n                 3.9, 4.1, 5.2, 4.8, 6.1,\n                 3.7, 3.2, 4.4, 5.0, 4.6),\n  expend_pc  = c(3842, 4120, 3256, 3189, 4567,\n                 2987, 3421, 2876, 2654, 2543,\n                 3102, 3456, 2876, 2987, 2765)\n)\n\nglimpse(counties_raw)\n\nRows: 15\nColumns: 6\n$ county     &lt;chr&gt; \"Wake\", \"Mecklenburg\", \"Guilford\", \"Forsyth\", \"Durham\", \"Bu…\n$ region     &lt;chr&gt; \"Piedmont\", \"Piedmont\", \"Piedmont\", \"Piedmont\", \"Piedmont\",…\n$ population &lt;dbl&gt; 1129410, 1115482, 541299, 382295, 330506, 275203, 234473, 3…\n$ med_income &lt;dbl&gt; 78500, 72100, 56300, 54200, 65800, NA, 61400, 49300, 55200,…\n$ unemp_rate &lt;dbl&gt; 3.1, 3.4, 4.2, 4.5, 3.8, 3.9, 4.1, 5.2, 4.8, 6.1, 3.7, 3.2,…\n$ expend_pc  &lt;dbl&gt; 3842, 4120, 3256, 3189, 4567, 2987, 3421, 2876, 2654, 2543,…\n\n\nNotice that med_income for Buncombe County is NA. We handle this in the next step.",
+    "crumbs": [
+      "Home",
+      "Demonstrations",
+      "Descriptive Statistics: From Raw Data to Publication-Ready Output"
+    ]
+  },
+  {
+    "objectID": "content/demo-quarto-vs-canvas.html#step-2-clean-the-data",
+    "href": "content/demo-quarto-vs-canvas.html#step-2-clean-the-data",
+    "title": "Descriptive Statistics: From Raw Data to Publication-Ready Output",
+    "section": "Step 2 — Clean the Data",
+    "text": "Step 2 — Clean the Data\nThe code below performs three operations. Hover over the numbered annotations to see what each does.\n\ncounties &lt;- counties_raw |&gt;\n  mutate(\n1    med_income = if_else(\n      is.na(med_income),\n      median(med_income, na.rm = TRUE),\n      med_income\n    ),\n2    income_group = case_when(\n      med_income &gt;= 70000 ~ \"High\",\n      med_income &gt;= 55000 ~ \"Middle\",\n      .default            = \"Lower-Middle\"\n    ),\n3    income_group = factor(\n      income_group,\n      levels = c(\"Lower-Middle\", \"Middle\", \"High\")\n    )\n  )\n\n\n1\n\nImpute the missing value. Replaces the single NA in med_income with the column median. In a real analysis, document and justify this decision — median imputation is appropriate when missingness is isolated and the distribution is skewed.\n\n2\n\nDerive a categorical variable. case_when() is cleaner than nested if_else() calls when you have more than two conditions. The .default argument handles any cases not matched above.\n\n3\n\nSet factor level order. Without this step, R sorts categories alphabetically — putting “High” before “Lower-Middle” in tables and figures. Explicit level ordering ensures a logical sequence.",
+    "crumbs": [
+      "Home",
+      "Demonstrations",
+      "Descriptive Statistics: From Raw Data to Publication-Ready Output"
+    ]
+  },
+  {
+    "objectID": "content/demo-quarto-vs-canvas.html#step-3-descriptive-statistics-table",
+    "href": "content/demo-quarto-vs-canvas.html#step-3-descriptive-statistics-table",
+    "title": "Descriptive Statistics: From Raw Data to Publication-Ready Output",
+    "section": "Step 3 — Descriptive Statistics Table",
+    "text": "Step 3 — Descriptive Statistics Table\n\n\n\n\n\n\nTipWhat Canvas cannot replicate here\n\n\n\nThe table below has currency-formatted numbers, a spanning column header, a footnote linked to a specific column, and alternating row shading — all generated in a few lines of code. Producing an equivalent in Canvas requires manually entering every value into a basic HTML table editor with no support for number formatting, column groups, or footnotes.\n\n\n\ncounties |&gt;\n  group_by(region) |&gt;\n  summarise(\n    n          = n(),\n    pop_avg    = mean(population),\n    income_avg = mean(med_income),\n    unemp_avg  = mean(unemp_rate),\n    expend_avg = mean(expend_pc),\n    .groups    = \"drop\"\n  ) |&gt;\n  arrange(region) |&gt;\n  gt() |&gt;\n  tab_header(\n    title    = md(\"**County Characteristics by Region**\"),\n    subtitle = \"Selected North Carolina Counties (Simulated Data)\"\n  ) |&gt;\n  tab_spanner(\n    label   = \"Economic Characteristics\",\n    columns = c(income_avg, unemp_avg, expend_avg)\n  ) |&gt;\n  cols_label(\n    region     = \"Region\",\n    n          = \"N\",\n    pop_avg    = \"Avg. Population\",\n    income_avg = \"Median HH Income\",\n    unemp_avg  = \"Unemployment (%)\",\n    expend_avg = \"Expenditure per Capita\"\n  ) |&gt;\n  fmt_integer(columns = pop_avg) |&gt;\n  fmt_currency(columns = c(income_avg, expend_avg), decimals = 0) |&gt;\n  fmt_number(columns = unemp_avg, decimals = 1) |&gt;\n  tab_footnote(\n    footnote  = \"Income imputed for one county with missing data (median substitution).\",\n    locations = cells_column_labels(columns = income_avg)\n  ) |&gt;\n  tab_style(\n    style     = cell_fill(color = \"#f8fafc\"),\n    locations = cells_body(rows = c(1, 3))\n  ) |&gt;\n  tab_style(\n    style     = cell_text(weight = \"bold\"),\n    locations = cells_column_spanners()\n  ) |&gt;\n  tab_options(\n    table.width               = pct(100),\n    heading.align             = \"left\",\n    column_labels.font.weight = \"bold\"\n  )\n\n\n\nTable 1: County characteristics by region, selected NC counties.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCounty Characteristics by Region\n\n\nSelected North Carolina Counties (Simulated Data)\n\n\nRegion\nN\nAvg. Population\n\nEconomic Characteristics\n\n\n\nMedian HH Income1\nUnemployment (%)\nExpenditure per Capita\n\n\n\n\nCoastal\n4\n238,750\n$52,875\n5.1\n$2,957\n\n\nMountains\n1\n275,203\n$55,950\n3.9\n$2,987\n\n\nPiedmont\n10\n452,030\n$63,830\n4.0\n$3,383\n\n\n\n1 Income imputed for one county with missing data (median substitution).",
+    "crumbs": [
+      "Home",
+      "Demonstrations",
+      "Descriptive Statistics: From Raw Data to Publication-Ready Output"
+    ]
+  },
+  {
+    "objectID": "content/demo-quarto-vs-canvas.html#step-4-visualization",
+    "href": "content/demo-quarto-vs-canvas.html#step-4-visualization",
+    "title": "Descriptive Statistics: From Raw Data to Publication-Ready Output",
+    "section": "Step 4 — Visualization",
+    "text": "Step 4 — Visualization\n\nggplot(\n  counties,\n  aes(x = med_income, y = expend_pc, color = region, size = population)\n) +\n  geom_point(alpha = 0.75) +\n  geom_smooth(\n    aes(group = 1),\n    method   = \"lm\",\n    se       = TRUE,\n    color    = \"#475569\",\n    linewidth = 0.6,\n    linetype = \"dashed\"\n  ) +\n  scale_x_continuous(labels = dollar_format(scale = 1e-3, suffix = \"K\")) +\n  scale_y_continuous(labels = dollar_format()) +\n  scale_size_continuous(labels = comma_format(), range = c(3, 10)) +\n  scale_color_manual(\n    values = c(\n      \"Coastal\"   = \"#0ea5e9\",\n      \"Mountains\" = \"#10b981\",\n      \"Piedmont\"  = \"#6366f1\"\n    )\n  ) +\n  labs(\n    title    = \"Household Income and Per Capita Expenditure\",\n    subtitle = \"15 Selected North Carolina Counties\",\n    x        = \"Median Household Income\",\n    y        = \"Per Capita Expenditure\",\n    color    = \"Region\",\n    size     = \"Population\",\n    caption  = \"Source: Simulated data for instructional purposes\"\n  ) +\n  theme_minimal(base_size = 13) +\n  theme(\n    plot.title       = element_text(face = \"bold\"),\n    legend.position  = \"right\",\n    panel.grid.minor = element_blank()\n  )\n\n\n\n\n\n\n\nFigure 1: A modest positive relationship exists between median household income and per capita expenditure. Piedmont counties span the widest income range; Coastal counties cluster at lower expenditure levels.",
+    "crumbs": [
+      "Home",
+      "Demonstrations",
+      "Descriptive Statistics: From Raw Data to Publication-Ready Output"
+    ]
+  },
+  {
+    "objectID": "content/demo-quarto-vs-canvas.html#what-this-demonstrates",
+    "href": "content/demo-quarto-vs-canvas.html#what-this-demonstrates",
+    "title": "Descriptive Statistics: From Raw Data to Publication-Ready Output",
+    "section": "What This Demonstrates",
+    "text": "What This Demonstrates\n\n\n\n\n\n\nImportantFive things Canvas cannot do\n\n\n\n\nRendered code alongside its output. In Canvas, instructors must paste screenshots of code and output as separate images. Students cannot copy, adapt, or verify the code.\nFormatted statistical tables. The gt table above has currency formatting, a spanning column header, a footnote linked to a specific column, and conditional row shading. Canvas’s HTML table editor supports none of this.\nCode annotations. The hover annotations in Step 2 link explanatory text directly to specific lines of code — a feature impossible in any static platform.\nAccessible figure captions and alt text. The fig-cap and fig-alt chunk options produce a proper HTML &lt;figcaption&gt; and alt attribute required for WCAG compliance. Images uploaded to Canvas have no enforced alt text and no semantic caption structure.\nReproducibility. If the underlying data changes, every table and figure on this page updates automatically on the next render. A Canvas page requires manually replacing every screenshot.",
+    "crumbs": [
+      "Home",
+      "Demonstrations",
+      "Descriptive Statistics: From Raw Data to Publication-Ready Output"
+    ]
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News and Announcements",
+    "section": "",
+    "text": "Skip to main content\n\n\n\n\nCourse announcements will appear here throughout the semester. Check back regularly or subscribe to updates.\n\n\n\n\n\nWelcome to the Course!\n\n\nCourse website is live — here’s what to do before the first session.\n\n\n\n\n\nJanuary 13, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "content/index.html",
     "href": "content/index.html",
     "title": "Course Content",
@@ -199,13 +290,6 @@
       "Home",
       "Course Content"
     ]
-  },
-  {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "News and Announcements",
-    "section": "",
-    "text": "Skip to main content\n\n\n\n\nCourse announcements will appear here throughout the semester. Check back regularly or subscribe to updates.\n\n\n\n\n\nWelcome to the Course!\n\n\nCourse website is live — here’s what to do before the first session.\n\n\n\n\n\nJanuary 13, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "content/01-content.html",
