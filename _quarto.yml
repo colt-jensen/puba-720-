@@ -2,13 +2,14 @@ project:
   type: website
   output-dir: _site
 
+lang: en
+
 website:
   title: "PUBA 720: Applied Research for Public Administrators II"
   description: "Applied research methods for public administrators — [Institution], [Semester Year]"
   # Update these after creating your GitHub repo:
   site-url: "https://colt-jensen.github.io/puba-720-"
   repo-url: "https://github.com/colt-jensen/puba-720-"
-  lang: en
 
   navbar:
     background: "#1e3a5f"
@@ -71,8 +72,8 @@ website:
 
 format:
   html:
-    theme:
-      light: [flatly, styles.css]
+    theme: flatly
+    css: styles.css
     toc: true
     toc-depth: 3
     toc-title: "On this page"
