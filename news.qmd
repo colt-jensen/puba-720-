@@ -1,0 +1,15 @@
+---
+title: News and Announcements
+listing:
+  id: announcements
+  contents: announcements
+  sort: "date desc"
+  type: default
+  fields: [date, title, description]
+  date-format: "MMMM D, YYYY"
+---
+
+Course announcements will appear here throughout the semester. Check back regularly or subscribe to updates.
+
+::: {#announcements}
+:::

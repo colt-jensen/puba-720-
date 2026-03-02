@@ -1,0 +1,67 @@
+---
+title: Schedule
+---
+
+The schedule below lists all sessions and deadlines for the semester. Click any link to access readings, slides, and materials for that session.
+
+::: {.callout-note}
+This schedule is subject to change. Check [News](news.qmd) for any updates announced during the semester.
+:::
+
+---
+
+## Module 1: Foundations
+
+::: {.table-responsive-wrapper}
+
+| Week | Date | Topic | Materials | Assignment |
+|------|------|-------|-----------|------------|
+| 1 | [Date] | Introduction to [Topic] | [Content](content/01-content.qmd) | — |
+| — | [Date] | ***Exercise 1 Due*** | | [Exercise 1](assignment/01-exercise.qmd) |
+| 2 | [Date] | [Topic 2] | [Content](content/index.qmd) | — |
+| — | [Date] | ***Exercise 2 Due*** | | — |
+
+:::
+
+---
+
+## Module 2: Core Methods
+
+::: {.table-responsive-wrapper}
+
+| Week | Date | Topic | Materials | Assignment |
+|------|------|-------|-----------|------------|
+| 3 | [Date] | [Topic 3] | [Content](content/index.qmd) | — |
+| — | [Date] | ***Exercise 3 Due*** | | — |
+| 4 | [Date] | [Topic 4] | [Content](content/index.qmd) | — |
+| — | [Date] | ***Problem Set 1 Due*** | | — |
+
+:::
+
+---
+
+## Module 3: Applications
+
+::: {.table-responsive-wrapper}
+
+| Week | Date | Topic | Materials | Assignment |
+|------|------|-------|-----------|------------|
+| 5 | [Date] | [Topic 5] | [Content](content/index.qmd) | — |
+| — | [Date] | ***Exercise 5 Due*** | | — |
+| 6 | [Date] | [Topic 6] | [Content](content/index.qmd) | — |
+| — | [Date] | ***Problem Set 2 Due*** | | — |
+
+:::
+
+---
+
+## Wrap-Up
+
+::: {.table-responsive-wrapper}
+
+| Week | Date | Topic | Materials | Assignment |
+|------|------|-------|-----------|------------|
+| [N] | [Date] | Final Project Presentations | | — |
+| — | [Final date] | ***Final Project Due*** | | — |
+
+:::

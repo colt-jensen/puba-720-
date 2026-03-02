@@ -1,0 +1,56 @@
+---
+title: "Week 1: Introduction to [Topic]"
+date: "2025-01-13"
+description: "Course overview and an introduction to the core themes of [topic]."
+sidebar: content-sidebar
+---
+
+## Overview
+
+[1–2 sentence summary of what this session covers and why it matters for the course.]
+
+## Readings
+
+Complete all readings **before** the session.
+
+### Required
+
+- [Author, First. "Title of Reading." In *Book Title*, pp. X–Y. Publisher, Year.](link) — [Brief annotation: what to focus on, why it's important]
+- [Author, First. "Title of Article." *Journal* Vol(Issue), Year: pp. X–Y.](link)
+
+### Recommended
+
+- [Author, First. *Title*. Publisher, Year.](link) — [Optional deeper reading for those who want more background]
+
+---
+
+## Slides
+
+Slides from the session:
+
+- [View slides (HTML)](slides/01-slides.html){target="_blank" rel="noopener noreferrer" aria-label="View Week 1 slides, opens in new tab"}
+- [Download slides (PDF)](slides/01-slides.pdf){aria-label="Download Week 1 slides as PDF"}
+
+---
+
+## Lecture Notes
+
+[Add lecture notes, an outline, or key concepts from the session here. This is a good place to add any content that helps students review after class.]
+
+### Key Concepts
+
+- **[Concept 1]**: [Brief definition or explanation]
+- **[Concept 2]**: [Brief definition or explanation]
+- **[Concept 3]**: [Brief definition or explanation]
+
+---
+
+## Activities
+
+[Describe any in-class activities, exercises, or discussion prompts for this session.]
+
+---
+
+## Assignment
+
+The **Exercise 1** for this session is due [date]. See the [assignment page](../assignment/01-exercise.qmd) for instructions.

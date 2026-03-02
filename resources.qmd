@@ -1,0 +1,52 @@
+---
+title: Resources
+---
+
+This page collects useful references, tutorials, and tools organized by topic. All linked resources are freely available.
+
+## Textbooks and Readings
+
+- [Author, First. *Title of Book*. Publisher, Year.](link) — [Brief annotation: what it covers, who it's for, why it's useful]
+- [Author, First. *Title of Book*. Publisher, Year.](link) — [Annotation]
+
+## Software and Tools
+
+### Installing [Software Name]
+
+1. Visit [software website](link)
+2. Download the version for your operating system
+3. Follow the installation instructions
+4. [Any additional setup steps]
+
+### Getting Help with [Software Name]
+
+- [Official documentation](link)
+- [Community forum](link)
+- [Cheat sheets / quick reference](link)
+
+## Supplemental Readings
+
+### [Topic Area 1]
+
+- [Author. "Article Title." *Journal*, Year.](link)
+- [Author. "Article Title." *Journal*, Year.](link)
+
+### [Topic Area 2]
+
+- [Author. *Book Title*. Publisher, Year.](link)
+- [Author. "Article Title." *Journal*, Year.](link)
+
+## Writing and Citation
+
+- [Citation Management: Zotero](https://www.zotero.org/) — Free, open-source reference manager
+- [Institution Library](link) — Database access, interlibrary loan, research consultations
+- [Writing Center](link) — Writing support for all stages of the writing process
+
+## Getting Help
+
+| Resource | Contact | Hours |
+|---|---|---|
+| Instructor office hours | [Time, Location] | [Days] |
+| [TA Name] office hours | [Time, Location] | [Days] |
+| [Tutoring center](link) | [Contact info] | [Hours] |
+| [Library research help](link) | [Contact info] | [Hours] |

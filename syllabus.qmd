@@ -1,0 +1,111 @@
+---
+title: Syllabus
+---
+
+## Course Description
+
+[Replace this with a 1–3 paragraph description of the course — its subject matter, goals, and place in the curriculum.]
+
+## Learning Objectives
+
+By the end of this course, students will be able to:
+
+1. [Objective 1 — use a specific, measurable verb (analyze, construct, evaluate…)]
+2. [Objective 2]
+3. [Objective 3]
+4. [Objective 4]
+5. [Objective 5]
+
+## Course Materials
+
+### Required Texts
+
+All required readings are freely available online or through the university library.
+
+- [Author, First. *Title of Book*. Publisher, Year.](link)
+- [Author, First. *Title of Book*. Publisher, Year.](link)
+
+### Software
+
+We will use [Software Name] throughout the course.
+
+- [Software Name](link) — [brief description of what it does and why we use it]
+- [Additional tool](link) — [brief description]
+
+Installation instructions are on the [Resources](resources.qmd) page.
+
+## Course Schedule Overview
+
+[A brief paragraph describing the arc of the course — what students study in each module and how each module builds on the last. Point them to the full schedule.]
+
+See the [Schedule](schedule.qmd) for week-by-week details, readings, and deadlines.
+
+## Assignments and Grading
+
+### Grade Breakdown
+
+| Assignment | Points | Percentage |
+|---|---|---|
+| Weekly Exercises (N × 10 pts) | 100 | 40% |
+| Problem Sets (N × 25 pts) | 100 | 40% |
+| Final Project | 50 | 20% |
+| **Total** | **250** | **100%** |
+
+### Grading Scale
+
+| Grade | Range |
+|---|---|
+| A | 93–100 |
+| A− | 90–92 |
+| B+ | 87–89 |
+| B | 83–86 |
+| B− | 80–82 |
+| C+ | 77–79 |
+| C | 73–76 |
+| C− | 70–72 |
+| D | 60–69 |
+| F | Below 60 |
+
+### Assignment Descriptions
+
+**Weekly Exercises** — [Describe what exercises involve, how often they occur, and how to submit them. Mention roughly how long they take.]
+
+**Problem Sets** — [Describe what problem sets involve, how they differ from exercises, and the submission process.]
+
+**Final Project** — [Describe the scope, format, and deliverables of the final project. Mention any presentations or peer review components.]
+
+---
+
+## Course Policies
+
+### Attendance and Participation
+
+[State your attendance expectations. If participation is graded, explain how it is evaluated.]
+
+### Late Work
+
+[State your late work policy clearly — for example: "Assignments submitted late will lose 10% per day. Extensions are granted upon request before the deadline." Be explicit about how to request an extension.]
+
+### Use of AI Tools
+
+[State your policy on the use of large language models and generative AI tools for coursework. Be specific about which tasks permit or prohibit AI assistance, and what constitutes academic dishonesty in this context.]
+
+### Academic Integrity
+
+All work submitted in this course must be your own. Collaboration is [encouraged / not permitted] on [specific assignments]. Violations of academic integrity will be handled in accordance with [Institution]'s [Academic Integrity Policy](link).
+
+### Accessibility and Accommodations
+
+[Institution] is committed to providing an accessible learning environment for all students. Students who require accommodations should contact the [Disability Services Office](link) and provide documentation. Please share your accommodation letter with me as early in the semester as possible so we can arrange support promptly.
+
+If you encounter accessibility barriers in any course materials — including this website — please contact me directly at [email\@institution.edu](mailto:email@institution.edu) so I can provide an accessible alternative.
+
+This course website is built to meet [Web Content Accessibility Guidelines (WCAG) 2.1 Level AA](https://www.w3.org/WAI/WCAG21/quickref/). If you find a barrier that prevents you from accessing content, please let me know.
+
+### Student Wellbeing
+
+Graduate and undergraduate students alike can experience significant stress and mental health challenges. [Institution] offers [Counseling and Psychological Services](link). You are always welcome to speak with me if you are struggling.
+
+### Communication
+
+The best way to reach me is by email at [email\@institution.edu](mailto:email@institution.edu). I aim to respond within [24/48] hours on business days. For questions that others may share, please consider posting to [the course discussion forum / Discord / Piazza] so classmates can benefit from the answer.

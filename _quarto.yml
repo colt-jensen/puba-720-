@@ -1,0 +1,91 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "PUBA 720: Applied Research for Public Administrators II"
+  description: "Applied research methods for public administrators — [Institution], [Semester Year]"
+  # Update these after creating your GitHub repo:
+  site-url: "https://colt-jensen.github.io/puba-720-"
+  repo-url: "https://github.com/colt-jensen/puba-720-"
+  lang: en
+
+  navbar:
+    background: "#1e3a5f"
+    foreground: "#ffffff"
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: syllabus.qmd
+        text: Syllabus
+      - href: schedule.qmd
+        text: Schedule
+      - href: content/index.qmd
+        text: Content
+      - href: assignment/index.qmd
+        text: Assignments
+      - href: resources.qmd
+        text: Resources
+      - href: news.qmd
+        text: News
+
+  sidebar:
+    - id: content-sidebar
+      title: "Course Content"
+      style: "docked"
+      background: light
+      search: true
+      contents:
+        - content/index.qmd
+        - section: "Module 1: Foundations"
+          contents:
+            - content/01-content.qmd
+            # Add more: - content/02-content.qmd
+        # Add more modules as needed:
+        # - section: "Module 2: Core Methods"
+        #   contents:
+        #     - content/03-content.qmd
+
+    - id: assignment-sidebar
+      title: "Assignments"
+      style: "docked"
+      background: light
+      search: false
+      contents:
+        - assignment/index.qmd
+        - section: "Exercises"
+          contents:
+            - assignment/01-exercise.qmd
+            # Add more: - assignment/02-exercise.qmd
+        # - section: "Problem Sets"
+        #   contents:
+        #     - assignment/01-problem-set.qmd
+
+  page-footer:
+    left: |
+      Content licensed [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) · [Your Name](https://yourwebsite.com)
+    right: |
+      Built with [Quarto](https://quarto.org/)
+    background: light
+
+format:
+  html:
+    theme:
+      light: [flatly, styles.css]
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: false
+    smooth-scroll: false
+    anchor-sections: true
+    fig-cap-location: bottom
+    fig-responsive: true
+    html-math-method: mathjax
+    include-before-body: _includes/skip-nav.html
+
+execute:
+  echo: false
+  warning: false
+  message: false
+  freeze: auto

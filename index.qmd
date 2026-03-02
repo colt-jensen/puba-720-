@@ -1,0 +1,76 @@
+---
+title: "PUBA 720: Applied Research for Public Administrators II"
+pagetitle: "PUBA 720: Applied Research for Public Administrators II"
+page-layout: full
+sidebar: false
+toc: false
+---
+
+::: {.hero-banner}
+## PUBA 720: Applied Research for Public Administrators II
+
+**[Semester Year] · [Days, Time] · [Location] · [Institution]**
+:::
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-8}
+
+## Course Overview
+
+[Replace this paragraph with a 1–2 sentence description of what the course is about and why it matters.]
+
+[A second paragraph can describe the approach you take, the kind of work students will do, and who the course is designed for.]
+
+## What You Will Learn
+
+By the end of this course, you will be able to:
+
+1. **Understand** the foundational concepts of [topic area]
+2. **Apply** core methods to analyze [topic area] problems
+3. **Interpret** and critically evaluate [topic area] findings
+4. **Communicate** results clearly for diverse audiences
+
+## Course Format
+
+[Describe the course format — lecture, seminar, online asynchronous, hybrid, etc. Explain how readings, activities, and assignments fit together over the semester.]
+
+:::
+
+::: {.g-col-12 .g-col-md-4}
+
+::: {.course-details-card}
+**Instructor**
+
+[Your Name]
+[Title, Department]
+[[email\@institution.edu](mailto:email@institution.edu)]
+
+**Office Hours**
+
+[Days, Time]
+[Building, Room or Zoom link]
+
+**Course Details**
+
+| | |
+|---|---|
+| When | [Days, Time] |
+| Where | [Building, Room] |
+| Credits | [N] |
+| Prerequisites | [None or Course No.] |
+:::
+
+::: {.quick-links}
+**Quick Links**
+
+- [Syllabus](syllabus.qmd)
+- [Schedule](schedule.qmd)
+- [Content](content/index.qmd)
+- [Assignments](assignment/index.qmd)
+- [Resources](resources.qmd)
+:::
+
+:::
+
+:::

@@ -1,0 +1,63 @@
+---
+title: Assignments
+sidebar: assignment-sidebar
+toc: false
+---
+
+All assignments are listed below with due dates and point values. Click any assignment title for full instructions and submission details.
+
+::: {.callout-important}
+Submit all assignments via [submission platform — e.g., Canvas, Gradescope] by **11:59 PM** on the due date unless otherwise noted.
+:::
+
+---
+
+## Grade Breakdown
+
+| Assignment | Points | % of Grade |
+|---|---|---|
+| Weekly Exercises (N × 10 pts) | 100 | 40% |
+| Problem Sets (N × 25 pts) | 100 | 40% |
+| Final Project | 50 | 20% |
+| **Total** | **250** | **100%** |
+
+---
+
+## Exercises
+
+Short, practice-focused assignments completed most weeks.
+
+| # | Assignment | Due Date | Points |
+|---|---|---|---|
+| 1 | [Exercise 1: Introduction](01-exercise.qmd) | [Date] | 10 |
+| 2 | Exercise 2: [Topic] | [Date] | 10 |
+| 3 | Exercise 3: [Topic] | [Date] | 10 |
+
+---
+
+## Problem Sets
+
+Longer, more involved assignments that require applying course concepts.
+
+| # | Assignment | Due Date | Points |
+|---|---|---|---|
+| 1 | Problem Set 1: [Topic] | [Date] | 25 |
+| 2 | Problem Set 2: [Topic] | [Date] | 25 |
+
+---
+
+## Final Project
+
+| Component | Due Date | Points |
+|---|---|---|
+| Project proposal | [Date] | 10 |
+| Final submission | [Date] | 30 |
+| Presentation | [Date] | 10 |
+
+[Details and rubric for the final project will be posted here when available.]
+
+---
+
+## Late Work Policy
+
+[Restate your late work policy here, or link to the syllabus section: "See the [Syllabus](../syllabus.qmd#late-work) for the late work policy."]

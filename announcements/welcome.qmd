@@ -1,0 +1,16 @@
+---
+title: "Welcome to the Course!"
+date: "2025-01-13"
+description: "Course website is live — here's what to do before the first session."
+---
+
+Welcome to PUBA 720! Here is what to do before we meet for the first time:
+
+1. **Read the syllabus** — Review the [Syllabus](../syllabus.qmd) carefully, especially the policies section.
+2. **Check the schedule** — Look over the [Schedule](../schedule.qmd) to plan your semester.
+3. **Install software** — Follow the setup instructions on the [Resources](../resources.qmd) page.
+4. **Complete Exercise 1** — The first exercise is due [date]. See [Assignments](../assignment/index.qmd) for details.
+
+If you have any questions before the semester begins, feel free to email me at [email\@institution.edu](mailto:email@institution.edu).
+
+Looking forward to working with you this semester!

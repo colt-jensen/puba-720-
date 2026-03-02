@@ -1,0 +1,70 @@
+---
+title: "Exercise 1: Introduction to [Topic]"
+date: "2025-01-20"
+description: "Practice exercise covering the foundational concepts from Week 1."
+sidebar: assignment-sidebar
+---
+
+::: {.callout-important}
+**Due:** [Date] at 11:59 PM via [submission platform]
+**Points:** 10
+:::
+
+## Purpose
+
+[1–2 sentences describing what this exercise is meant to practice and how it connects to what students learned in Week 1.]
+
+## Prerequisites
+
+Before starting this exercise, make sure you have:
+
+- [ ] Read the Week 1 readings (see [Content](../content/01-content.qmd))
+- [ ] Installed [required software] (see [Resources](../resources.qmd))
+- [ ] Reviewed the Week 1 slides or lecture notes
+
+## Instructions
+
+### Step 1 — [First step title]
+
+[Clear, specific instructions for step 1. Use plain language and avoid jargon. If there are multiple sub-steps, use a numbered or bulleted list.]
+
+1. [Sub-step A]
+2. [Sub-step B]
+3. [Sub-step C]
+
+### Step 2 — [Second step title]
+
+[Instructions for step 2.]
+
+::: {.callout-tip}
+**Tip:** [Include a helpful tip here if there is a common point of confusion or a useful shortcut.]
+:::
+
+### Step 3 — [Third step title]
+
+[Instructions for step 3.]
+
+### Step 4 — Submitting Your Work
+
+When you are finished:
+
+1. [Final preparation step — e.g., render the document, export to PDF]
+2. Upload your [file type] to [submission platform] by the deadline
+3. Confirm the submission was received
+
+::: {.callout-note}
+**File naming:** Name your file `exercise-01-LASTNAME-FIRSTNAME.[ext]` before submitting.
+:::
+
+---
+
+## Grading
+
+This exercise is graded on completion and effort, not correctness. You will receive full credit (10/10) for a good-faith attempt that addresses each step.
+
+| Criterion | Points |
+|---|---|
+| All steps attempted | 6 |
+| Clear and complete responses | 3 |
+| File submitted correctly and on time | 1 |
+| **Total** | **10** |
